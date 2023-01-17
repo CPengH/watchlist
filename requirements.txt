@@ -12,5 +12,3 @@ python-dotenv==0.21.0
 SQLAlchemy==1.4.46
 Werkzeug==2.2.2
 zipp==3.11.0
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev')
-app.config['SQLALCHEMY_DATABASE_URI'] = prefix + os.path.join(os.path.dirname(app.root_path), os.getenv('DATABASE_FILE', 'data.db'))
